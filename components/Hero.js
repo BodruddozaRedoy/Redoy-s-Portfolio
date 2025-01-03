@@ -49,7 +49,7 @@ const Hero = () => {
           <div className="col-lg-5">
             <div className="author-image-part wow fadeIn delay-0-3s">
               <div className="bg-circle" />
-              <img src="assets/images/hero/me.png" alt="Author" />
+              {/* <img src="assets/images/hero/me.png" alt="Author" /> */}
               <div className="progress-shape">
                 <img
                   src="assets/images/hero/progress-shape.png"

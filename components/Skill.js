@@ -3,51 +3,51 @@ import Link from "next/link";
 const items = [
   {
     id: 1,
-    name: "Figma",
-    image: "assets/images/skills/skill1.png",
-    value: "95",
+    name: "React",
+    image: "assets/images/skills/react.png",
+    value: "90",
   },
   {
     id: 2,
     name: "Framer",
     image: "assets/images/skills/skill2.png",
-    value: "83",
+    value: "30",
   },
   {
     id: 3,
-    name: "Photoshop",
-    image: "assets/images/skills/skill3.png",
-    value: "93",
+    name: "Illustrator",
+    image: "https://img.icons8.com/?size=100&id=hksmgkMI669m&format=png&color=000000",
+    value: "70",
   },
   {
     id: 4,
     name: "Wordpress",
     image: "assets/images/skills/skill4.png",
-    value: "84",
+    value: "80",
   },
   {
     id: 5,
-    name: "Angular",
-    image: "assets/images/skills/skill5.png",
-    value: "65",
+    name: "Express Js",
+    image: "https://img.icons8.com/?size=100&id=WNoJgbzDr3i2&format=png&color=000000",
+    value: "70",
   },
   {
     id: 6,
-    name: "Webflow",
-    image: "assets/images/skills/skill6.png",
-    value: "86",
+    name: "Typescript",
+    image: "https://img.icons8.com/?size=100&id=uJM6fQYqDaZK&format=png&color=000000",
+    value: "40",
   },
   {
     id: 7,
-    name: "Python",
-    image: "assets/images/skills/skill7.png",
-    value: "62",
+    name: "Node Js",
+    image: "https://img.icons8.com/?size=100&id=54087&format=png&color=000000",
+    value: "70",
   },
   {
     id: 8,
-    name: "Sketch",
-    image: "assets/images/skills/skill8.png",
-    value: "94",
+    name: "Mongo Db",
+    image: "https://img.icons8.com/?size=100&id=bosfpvRzNOG8&format=png&color=000000",
+    value: "90",
   },
 ];
 
@@ -65,9 +65,7 @@ const Skill = () => {
                     Let’s Explore Popular <span>Skills &amp; Experience</span>
                   </h2>
                   <p>
-                    Sed ut perspiciatis unde omnis iste natus to voluptatem
-                    accusantium doloremque laudantium, totam rem aperiamc eaque
-                    ipsa quae ab illo inventore veritatis
+                    These are my skills that's I learned over 2 years
                   </p>
                 </div>
                 <Link legacyBehavior href="/about">
@@ -83,7 +81,7 @@ const Skill = () => {
                   {items.map((item) => (
                     <div className="col-xl-3 col-lg-4 col-md-3 col-sm-4 col-6">
                       <div className="skill-item wow fadeInUp delay-0-2s">
-                        <img src={item.image} alt="Skill" />
+                        <img className="skill-img" src={item.image} alt="Skill" />
                         <h5>{item.name}</h5>
                         <span className="percent">{item.value}%</span>
                       </div>

@@ -55,13 +55,14 @@ const Header1 = ({ onePageMenu }) => {
                 <div className="navbar-header">
                   <div className="mobile-logo my-15">
                     <Link legacyBehavior href="/">
-                      <a>
-                        <img
-                          src="assets/images/logos/logo.png"
-                          alt="Logo"
-                          title="Logo"
-                        />
-                      </a>
+                    <a className="text-4xl text-red-300" style={{fontSize: '25px', color: "#c9f31d"}}>
+                    {/* <img
+                      src="assets/images/logos/logo.png"
+                      alt="Logo"
+                      title="Logo"
+                    /> */}
+                    CodeWithRedoy
+                  </a>
                     </Link>
                   </div>
                   {/* Toggle Button */}
@@ -127,12 +128,13 @@ const Header2 = ({ onePageMenu }) => {
             <div className="logo-outer">
               <div className="logo">
                 <Link legacyBehavior href="/">
-                  <a>
-                    <img
+                <a className="text-4xl text-red-300" style={{fontSize: '25px', color: "#c9f31d"}}>
+                    {/* <img
                       src="assets/images/logos/logo.png"
                       alt="Logo"
                       title="Logo"
-                    />
+                    /> */}
+                    CodeWithRedoy
                   </a>
                 </Link>
               </div>
@@ -143,13 +145,14 @@ const Header2 = ({ onePageMenu }) => {
                 <div className="navbar-header">
                   <div className="mobile-logo my-15">
                     <Link legacyBehavior href="/">
-                      <a>
-                        <img
-                          src="assets/images/logos/logo.png"
-                          alt="Logo"
-                          title="Logo"
-                        />
-                      </a>
+                    <a className="text-4xl text-red-300" style={{fontSize: '25px', color: "#c9f31d"}}>
+                    {/* <img
+                      src="assets/images/logos/logo.png"
+                      alt="Logo"
+                      title="Logo"
+                    /> */}
+                    CodeWithRedoy
+                  </a>
                     </Link>
                   </div>
                   {/* Toggle Button */}

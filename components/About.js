@@ -11,29 +11,26 @@ const About = () => {
                 <div className="section-title mb-35 wow fadeInUp delay-0-2s">
                   <span className="sub-title mb-15">About Me</span>
                   <h2>
-                    Professional <span>Problem Solutions</span> For Digital
-                    Products
+                    Professional <span>Web Developer</span> For Your Digital
+                    Business
                   </h2>
                   <p>
-                    At vero eos et accusamus etodio dignissimos ducimus
-                    praesentium voluptatum corrupti quos dolores quas molestias
-                    excepturi sint occaecati cupiditate provident qui officia
-                    deserunt mollitia animi, id est laborum et dolorum
+                  I am a dedicated and enthusiastic MERN stack developer with a strong foundation in building dynamic and responsive web applications. Having honed my skills in MongoDB, Express.js, React, and Node.js, I thrive on creating seamless and user-friendly experiences.
                   </p>
                 </div>
                 <ul className="list-style-one two-column wow fadeInUp delay-0-2s">
-                  <li>Branding &amp; Design</li>
-                  <li>Digital Marketing</li>
+                  {/* <li>Branding &amp; Design</li> */}
+                  {/* <li>Digital Marketing</li> */}
                   <li>Web Development</li>
-                  <li>Product Design</li>
+                  <li>Web Design</li>
                 </ul>
                 <div className="about-info-box mt-25 wow fadeInUp delay-0-2s">
                   <div className="info-box-item">
                     <i className="far fa-envelope" />
                     <div className="content">
-                      <span>Email Us</span>
+                      <span>Email Me</span>
                       <br />
-                      <a href="mailto:support@gmail.com">support@gmail.com</a>
+                      <a href="mailto:bodruddozaredoy@gmail.com">bodruddozaredoy@gmail.com</a>
                     </div>
                   </div>
                   <div className="info-box-item">
@@ -41,7 +38,7 @@ const About = () => {
                     <div className="content">
                       <span>Make A Call</span>
                       <br />
-                      <a href="callto:+000(123)45688">+880 (123) 456 88</a>
+                      <a href="callto:+8801758383869">+880 (175) 838 3869</a>
                     </div>
                   </div>
                 </div>
@@ -57,7 +54,7 @@ const About = () => {
                 </div>
                 <div className="about-btn btn-two wow fadeInRight delay-0-5s">
                   <img src="assets/images/about/btn-image2.png" alt="Image" />
-                  <h6>Mark J. Collins</h6>
+                  <h6>Bodruddoza Redoy</h6>
                   <i className="fas fa-arrow-right" />
                 </div>
                 <div className="dot-shape">

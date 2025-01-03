@@ -29,3 +29,7 @@ html {
 .project-item.style-four {
   position: relative;
 }
+
+.skill-img{
+  width: 60px;
+}

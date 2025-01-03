@@ -21,7 +21,7 @@ export default function Home() {
       <About />
       {/* About Area end */}
       {/* Resume Area start */}
-      <Resume />
+      {/* <Resume /> */}
       {/* Resume Area end */}
       {/* Services Area start */}
       <Services />
