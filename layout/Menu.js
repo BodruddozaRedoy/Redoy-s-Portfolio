@@ -44,9 +44,9 @@ const MultiMenu = () => {
       <li>
         <Link href="/about">about</Link>
       </li>
-      <li>
+      {/* <li>
         <Link href="/services">services</Link>
-      </li>
+      </li> */}
       <li className="dropdown">
         {/* <a href="#">projects</a>
         <ul>

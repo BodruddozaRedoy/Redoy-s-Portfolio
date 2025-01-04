@@ -3,11 +3,13 @@
       "id":1,
       "title": "Sports Horizon",
       "subTitle": "Web Development",
+      "category": "development",
       "img": "/assets/images/projects/project1.png",
       "description": "A web app built using React, React Router, and Firebase for authentication and routing. It offers personalized career guidance.",
       "technologies": ["React", "Express Js", "MongoDb", "Node Js", "Firebase", "Tailwind Css"],
       "packages": ["lottie-react", "react-awesome-reveal", "react-headroom", "react-helmet", "react-hot-toast", "react-rating-stars-component", "react-responsive-carousel", "react-slick", "react-sweetalert2"],
       "tags": ["Sports", "Mern"],
+      "liveLink":"https://sports-horizon-b10a10.web.app/",
       "published": "October 10, 2024"
       
     },
@@ -15,11 +17,13 @@
       "id":2,
       "title": "Gadget Heaven",
       "subTitle": "Web Development",
+      "category": "development design",
       "img": "/assets/images/projects/project2.png",
-      "description": "",
+      "description": "A web app built using React, React Router, and Firebase for authentication and routing. It offers personalized career guidance.",
       "technologies": ["React", "Express Js", "MongoDb", "Node Js", "Firebase", "Tailwind Css"],
       "packages": ["lottie-react", "react-awesome-reveal", "react-headroom", "react-helmet", "react-hot-toast", "react-rating-stars-component", "react-responsive-carousel", "react-slick", "react-sweetalert2"],
       "tags": ["Gadgets", "Mern"],
+      "liveLink":"https://gadget-heaven-d9be9.web.app/",
       "published": "September 20, 2024"
       
     }

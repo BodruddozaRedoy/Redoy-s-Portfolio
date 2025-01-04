@@ -96,6 +96,7 @@ const ProjectDetails = ({params}) => {
               </div>
             </div>
           </div>
+          <p style={{fontSize: "25px"}}>Live Link: <a href={projects?.liveLink} target="_blank" rel="noopener noreferrer">Click here</a></p>
           {/* <div className="row pb-15">
             <div className="col-lg-4 col-sm-6">
               <div className="image mb-30 wow fadeInUp delay-0-2s">
@@ -196,7 +197,7 @@ const ProjectDetails = ({params}) => {
       </section>
       {/* Project Details Area end */}
       {/* Related Projects Area start */}
-      <section className="related-projects-area pb-70 rpb-40 rel z-1">
+      {/* <section className="related-projects-area pb-70 rpb-40 rel z-1">
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-xl-12">
@@ -274,7 +275,7 @@ const ProjectDetails = ({params}) => {
           <span />
           <span />
         </div>
-      </section>
+      </section> */}
     </NoxfolioLayout>
   );
 };

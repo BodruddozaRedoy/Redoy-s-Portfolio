@@ -33,19 +33,19 @@ export default function Home() {
       <Projects />
       {/* Projects Area end */}
       {/* Testimonial Area start */}
-      <Testimonial />
+      {/* <Testimonial /> */}
       {/* Testimonial Area end */}
       {/* Pricing Area start */}
-      <Pricing />
+      {/* <Pricing /> */}
       {/* Pricing Area end */}
       {/* Contact Area start */}
       <Contact />
       {/* Contact Area end */}
       {/* Blog Area start */}
-      <Blog />
+      {/* <Blog /> */}
       {/* Blog Area end */}
       {/* Client Log start */}
-      <Clients />
+      {/* <Clients /> */}
       {/* Client Log end */}
     </NoxfolioLayout>
   );

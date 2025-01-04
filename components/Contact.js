@@ -14,14 +14,13 @@ const Contact = () => {
                   Let’s Talk For your <span>Next Projects</span>
                 </h2>
                 <p>
-                  Sed ut perspiciatis unde omnin natus totam rem aperiam eaque
-                  inventore veritatis
+                Whether it's crafting intuitive front-end interfaces or building robust back-end systems, I am committed to delivering impactful solutions that meet user and business needs.
                 </p>
               </div>
               <ul className="list-style-two">
-                <li>5+ Years Of Experience</li>
+                <li>2+ Years Of Experience</li>
                 <li>Professional Web Designer</li>
-                <li>Mobile Apps Design</li>
+                <li>Professional Web Developer</li>
                 <li>Custom Design Support</li>
               </ul>
             </div>
@@ -45,7 +44,7 @@ const Contact = () => {
                         name="name"
                         className="form-control"
                         defaultValue=""
-                        placeholder="Richard D. Hammond"
+                        placeholder="Your Name"
                         required=""
                         data-error="Please enter your Name"
                       />
@@ -64,7 +63,7 @@ const Contact = () => {
                         name="email"
                         className="form-control"
                         defaultValue=""
-                        placeholder="support@gmail.com"
+                        placeholder="your@gmail.com"
                         required=""
                         data-error="Please enter your Email"
                       />
@@ -83,7 +82,7 @@ const Contact = () => {
                         name="phone_number"
                         className="form-control"
                         defaultValue=""
-                        placeholder="+880 (123) 456 88"
+                        placeholder="Your Number"
                         required=""
                         data-error="Please enter your Phone Number"
                       />
@@ -131,7 +130,7 @@ const Contact = () => {
                   <div className="col-md-12">
                     <div className="form-group mb-0">
                       <button type="submit" className="theme-btn">
-                        Send Us Message <i className="far fa-angle-right" />
+                        Send Me Message <i className="far fa-angle-right" />
                       </button>
                       <div id="msgSubmit" className="hidden" />
                     </div>

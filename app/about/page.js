@@ -68,7 +68,7 @@ const About = () => {
                 </div>
                 <div className="about-btn three wow fadeInRight delay-0-4s">
                   <img src="assets/images/about/btn-image1.png" alt="Image" />
-                  <h6>Experience Designer</h6>
+                  <h6>Experience Developer</h6>
                   <i className="fas fa-arrow-right" />
                 </div>
                 <div className="dot-shape one">

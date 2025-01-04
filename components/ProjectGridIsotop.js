@@ -7,6 +7,7 @@ const ProjectGridIsotop = () => {
   // Isotope
   const isotope = useRef();
   const [filterKey, setFilterKey] = useState("*");
+  const [projects, setProjects] = useState([])
   useEffect(() => {
     setTimeout(() => {
       isotope.current = new Isotope(".project-masonry-active", {
@@ -34,6 +35,14 @@ const ProjectGridIsotop = () => {
     setFilterKey(key);
   };
   const activeBtn = (value) => (value === filterKey ? "current" : "");
+  useEffect(() => {
+    fetch("/projects.json")
+    .then(res => res.json())
+    .then(data => (
+      setProjects(data)
+      
+    ))
+  }, [])
   return (
     <Fragment>
       <ul className="project-filter filter-btns-one justify-content-center pb-35 wow fadeInUp delay-0-2s">
@@ -44,34 +53,22 @@ const ProjectGridIsotop = () => {
           Show All
         </li>
         <li
+          className={`c-pointer ${activeBtn("development")}`}
+          onClick={handleFilterKeyChange("development")}
+        >
+          Web Development
+        </li>
+        <li
           className={`c-pointer ${activeBtn("design")}`}
           onClick={handleFilterKeyChange("design")}
         >
-          Design
-        </li>
-        <li
-          className={`c-pointer ${activeBtn("branding")}`}
-          onClick={handleFilterKeyChange("branding")}
-        >
-          Branding
+          Web Design
         </li>
         <li
           className={`c-pointer ${activeBtn("marketing")}`}
           onClick={handleFilterKeyChange("marketing")}
         >
-          Marketing
-        </li>
-        <li
-          className={`c-pointer ${activeBtn("development")}`}
-          onClick={handleFilterKeyChange("development")}
-        >
-          Development
-        </li>
-        <li
-          className={`c-pointer ${activeBtn("apps")}`}
-          onClick={handleFilterKeyChange("apps")}
-        >
-          Mobile Apps
+          Wordpress
         </li>
         <li
           className={`c-pointer ${activeBtn("graphics")}`}
@@ -81,27 +78,33 @@ const ProjectGridIsotop = () => {
         </li>
       </ul>
       <div className="row project-masonry-active">
-        <div className="col-lg-6 item branding development">
-          <div className="project-item style-two wow fadeInUp delay-0-2s">
-            <div className="project-image">
-              <img src="assets/images/projects/project1.jpg" alt="Project" />
-              <Link legacyBehavior href="/project-details">
-                <a className="details-btn">
-                  <i className="far fa-arrow-right" />
-                </a>
-              </Link>
-            </div>
-            <div className="project-content">
-              <span className="sub-title">Product Design</span>
-              <h3>
-                <Link legacyBehavior href="project-details">
-                  Mobile Application Design
+
+        {
+          projects?.map(project => (
+          <div className={`col-lg-6 item ${project.category}`}>
+            <div className="project-item style-two wow fadeInUp delay-0-2s">
+              <div className="project-image">
+                <img src={project.img} alt="Project" />
+                <Link legacyBehavior href={`project-details/${project.id}`}>
+                  <a className="details-btn">
+                    <i className="far fa-arrow-right" />
+                  </a>
                 </Link>
-              </h3>
+              </div>
+              <div className="project-content">
+                <span className="sub-title">{project.subTitle}</span>
+                <h3>
+                  <Link legacyBehavior href={`project-details/${project.id}`}>
+                    {project.title}
+                  </Link>
+                </h3>
+              </div>
             </div>
-          </div>
         </div>
-        <div className="col-lg-6 item design marketing graphics">
+          ))
+        }
+        
+        {/* <div className="col-lg-6 item design">
           <div className="project-item style-two wow fadeInUp delay-0-4s">
             <div className="project-image">
               <img src="assets/images/projects/project2.jpg" alt="Project" />
@@ -120,8 +123,8 @@ const ProjectGridIsotop = () => {
               </h3>
             </div>
           </div>
-        </div>
-        <div className="col-lg-6 item development graphics">
+        </div> */}
+        {/* <div className="col-lg-6 item development graphics">
           <div className="project-item style-two wow fadeInUp delay-0-2s">
             <div className="project-image">
               <img src="assets/images/projects/project3.jpg" alt="Project" />
@@ -140,8 +143,8 @@ const ProjectGridIsotop = () => {
               </h3>
             </div>
           </div>
-        </div>
-        <div className="col-lg-6 item design development apps">
+        </div> */}
+        {/* <div className="col-lg-6 item design development apps">
           <div className="project-item style-two wow fadeInUp delay-0-4s">
             <div className="project-image">
               <img src="assets/images/projects/project4.jpg" alt="Project" />
@@ -160,8 +163,8 @@ const ProjectGridIsotop = () => {
               </h3>
             </div>
           </div>
-        </div>
-        <div className="col-lg-6 item branding marketing graphics">
+        </div> */}
+        {/* <div className="col-lg-6 item branding marketing graphics">
           <div className="project-item style-two wow fadeInUp delay-0-2s">
             <div className="project-image">
               <img src="assets/images/projects/project5.jpg" alt="Project" />
@@ -180,8 +183,8 @@ const ProjectGridIsotop = () => {
               </h3>
             </div>
           </div>
-        </div>
-        <div className="col-lg-6 item design marketing apps">
+        </div> */}
+        {/* <div className="col-lg-6 item design marketing apps">
           <div className="project-item style-two wow fadeInUp delay-0-4s">
             <div className="project-image">
               <img src="assets/images/projects/project6.jpg" alt="Project" />
@@ -200,7 +203,7 @@ const ProjectGridIsotop = () => {
               </h3>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </Fragment>
   );
