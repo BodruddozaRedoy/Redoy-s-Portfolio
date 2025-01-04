@@ -62,7 +62,7 @@ const About = () => {
                   <i className="fas fa-arrow-right" />
                 </div>
                 <div className="about-btn two wow fadeInRight delay-0-5s">
-                  <img src="assets/images/about/btn-image2.png" alt="Image" />
+                  <img style={{width: "35px"}} src="assets/images/about/small-img.png" alt="Image" />
                   <h6>Bodruddoza Redoy</h6>
                   <i className="fas fa-arrow-right" />
                 </div>

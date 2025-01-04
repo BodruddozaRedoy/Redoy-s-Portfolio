@@ -44,7 +44,7 @@ const Footer1 = () => {
                 <h6 className="footer-title">Quick Link</h6>
                 <ul>
                   <li>
-                    <Link legacyBehavior href="services">
+                    <Link legacyBehavior href="#">
                       Service
                     </Link>
                   </li>
@@ -54,12 +54,12 @@ const Footer1 = () => {
                     </Link>
                   </li>
                   <li>
-                    <Link legacyBehavior href="services#pricing">
+                    <Link legacyBehavior href="#">
                       Pricing
                     </Link>
                   </li>
                   <li>
-                    <Link legacyBehavior href="about#faqs">
+                    <Link legacyBehavior href="#">
                       Faqs
                     </Link>
                   </li>
@@ -125,16 +125,16 @@ const Footer1 = () => {
             <div className="col-lg-6 text-lg-end">
               <ul className="footer-bottom-nav">
                 <li>
-                  <a href="#">Facebook</a>
+                  <a target="_blank" href="https://www.facebook.com/bodruddozaredoy">Facebook</a>
                 </li>
                 <li>
-                  <a href="#">Twitter</a>
+                  <a target="_blank" href="https://x.com/BodruddozaRedoy">Twitter</a>
                 </li>
                 <li>
-                  <a href="#">Instagram</a>
+                  <a target="_blank" href="https://github.com/BodruddozaRedoy">Github</a>
                 </li>
                 <li>
-                  <a href="#">LinkedIn</a>
+                  <a target="_blank" href="https://www.linkedin.com/in/bodruddoza-redoy-637789197/">LinkedIn</a>
                 </li>
               </ul>
             </div>

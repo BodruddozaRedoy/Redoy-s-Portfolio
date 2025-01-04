@@ -46,14 +46,14 @@ const About = () => {
             </div>
             <div className="col-lg-5">
               <div className="about-image-part wow fadeInUp delay-0-3s">
-                <img src="assets/images/about/about.jpg" alt="About Me" />
+                <img src="https://scontent.fdac19-1.fna.fbcdn.net/v/t39.30808-6/432584997_1116935985996916_2091304172979461220_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeF5AXbuaMrq7PvlnfEgiPHmmXArtaiQRF6ZcCu1qJBEXlU5vzZC_z0QCs6luTzyYfWCs4fQemQasSSUiIQ5Ksvp&_nc_ohc=cdU10b1CFycQ7kNvgEV3UIq&_nc_zt=23&_nc_ht=scontent.fdac19-1.fna&_nc_gid=ApwcO_LBRHLFAuZTz025O4W&oh=00_AYAza01uLhiCL6X_WpTf5wAuh3rMKLbU2bKj7Qg713d3QA&oe=677EC3DD" alt="About Me" />
                 <div className="about-btn btn-one wow fadeInRight delay-0-4s">
                   <img src="assets/images/about/btn-image1.png" alt="Image" />
                   <h6>Experience Designer</h6>
                   <i className="fas fa-arrow-right" />
                 </div>
                 <div className="about-btn btn-two wow fadeInRight delay-0-5s">
-                  <img src="assets/images/about/btn-image2.png" alt="Image" />
+                  <img style={{width: "40px"}} src="assets/images/about/small-img.png" alt="Image" />
                   <h6>Bodruddoza Redoy</h6>
                   <i className="fas fa-arrow-right" />
                 </div>
