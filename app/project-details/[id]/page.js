@@ -4,6 +4,7 @@ import NoxfolioLayout from "@/layout/NoxfolioLayout";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
+import { Helmet } from "react-helmet";
 // import { useRouter } from "next/router";
 
 // export const metadata = {
@@ -32,6 +33,7 @@ const ProjectDetails = ({params}) => {
     <NoxfolioLayout>
       <PageBanner pageName={projects?.title} />
       {/* ProjectDetails Area start */}
+      <Helmet title="CodeWithRedoy | Project Details"/>
       <section className="projects-details-area pt-40 pb-130 rpb-100 rel z-1">
         <div className="container">
           <div className="projects-details-image mb-50 wow fadeInUp delay-0-2s">
