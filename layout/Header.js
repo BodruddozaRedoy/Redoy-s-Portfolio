@@ -94,7 +94,7 @@ const Header1 = ({ onePageMenu }) => {
               <div className="menu-sidebar">
                 <button onClick={() => toggleSidebar()}>
                   <img
-                    src="assets/images/shape/sidebar-tottler.svg"
+                    src="/assets/images/shape/sidebar-tottler.svg"
                     alt="Toggler"
                   />
                 </button>

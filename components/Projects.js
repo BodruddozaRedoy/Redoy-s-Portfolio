@@ -1,4 +1,6 @@
+"use client"
 import Link from "next/link";
+import { useEffect, useState } from "react";
 
 const projects = [
   {
@@ -10,6 +12,13 @@ const projects = [
 ]
 
 const Projects = () => {
+  const [projects, setProjects] = useState([])
+  useEffect(() => {
+    fetch("/projects.json")
+    .then(res => res.json())
+    .then(data => setProjects(data)
+    )
+  }, [])
   return (
     <section
       id="portfolio"
@@ -26,7 +35,38 @@ const Projects = () => {
             </div>
           </div>
         </div>
-        <div className="row align-items-center pb-25">
+        
+        {
+            projects?.map(project => (
+              <div className="row align-items-center pb-25">
+          <div className={`col-lg-6 ${project?.id % 2 === 0 && 'order-lg-2'}`}>
+            <div className="project-image wow fadeInLeft delay-0-2s">
+              <img src={project.img} alt="Project" />
+            </div>
+          </div>
+          <div className="col-xl-5 col-lg-6">
+            <div className="project-content wow fadeInRight delay-0-2s">
+              <span className="sub-title">{project.subTitle}</span>
+              <h2>
+                <Link legacyBehavior href="project-details">
+                  {project.title}
+                </Link>
+              </h2>
+              <p>
+              {project.description}
+              </p>
+              <Link legacyBehavior href={`/project-details/${project.id}`}>
+                <a className="details-btn">
+                  <i className="far fa-arrow-right" />
+                </a>
+              </Link>
+            </div>
+          </div>
+        </div>
+            ))
+        }
+
+        {/* <div className="row align-items-center pb-25">
           <div className="col-lg-6">
             <div className="project-image wow fadeInLeft delay-0-2s">
               <img src="assets/images/projects/project1.png" alt="Project" />
@@ -102,7 +142,7 @@ const Projects = () => {
               </Link>
             </div>
           </div>
-        </div>
+        </div> */}
         
         <div className="project-btn text-center wow fadeInUp delay-0-2s">
           <Link legacyBehavior href="/projects">

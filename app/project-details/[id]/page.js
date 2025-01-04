@@ -1,54 +1,72 @@
+"use client"
 import PageBanner from "@/components/PageBanner";
 import NoxfolioLayout from "@/layout/NoxfolioLayout";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
+import { useEffect, useState } from "react";
+// import { useRouter } from "next/router";
 
-export const metadata = {
-  title: "Projects Details",
-};
+// export const metadata = {
+//   title: "Projects Details",
+// };
 
-const ProjectDetails = () => {
+const ProjectDetails = ({params}) => {
+  // const router = useRouter()
+  const {id:_id} = params
+  const [projects, setProjects] = useState()
+  useEffect(() => {
+    fetch("/projects.json")
+    .then(res => res.json())
+    .then(data => {
+      const filter = data?.find(prev => prev.id == _id)
+      setProjects(filter);
+      
+    }
+    )
+    .catch((err) => console.log(err)
+    )
+  }, [])
+  console.log(_id);
+  
   return (
     <NoxfolioLayout>
-      <PageBanner pageName={"Mobile Application Design"} />
+      <PageBanner pageName={projects?.title} />
       {/* ProjectDetails Area start */}
       <section className="projects-details-area pt-40 pb-130 rpb-100 rel z-1">
         <div className="container">
           <div className="projects-details-image mb-50 wow fadeInUp delay-0-2s">
             <img
-              src="assets/images/projects/project-details.jpg"
-              alt="Project Details"
+              src={projects?.img}
+              alt="Project Details img"
             />
           </div>
           <div className="row gap-120">
             <div className="col-lg-8">
               <div className="project-details-content wow fadeInUp delay-0-2s">
-                <h3>We Create digital Product For Business</h3>
+                <h3>I Create digital services For Business</h3>
                 <p className="big-letter">
-                  sSed ut perspiciatis unde omnis iste natus error sit
-                  voluptatem accusantium doloremque seeney laudantium totam rem
-                  aperiam eaque ipsa quae abillo inventore veritatis
+                {projects?.description}
                 </p>
-                <p>
-                  Beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem
-                  quia voluptas sit aspernatur aufugit sed quia consequuntur
-                  magni dolores eos qui ratione voluptatem sequi nesciunt. Neque
-                  porro quisquam estqui dolorem ipsum quia dolor sit amet,
-                  consectetur, adipisci velit, sed quia non numquam eius modi
-                  tempora incidunt ut labore et dolore magnam aliquam quaerat
-                  voluptatem. Ut enim ad minima veniam, quis nostrum
-                  exercitationem ullam corporis suscipit laboriosam, nisi ut
-                  aliquid consequature
+                <p style={{fontSize: "25px"}}>
+                  Tech Stack:
                 </p>
-                <ul className="list-style-one two-column mt-50 mb-40">
-                  <li>Branding &amp; Design</li>
-                  <li>Digital Marketing</li>
-                  <li>Web Development</li>
-                  <li>Product Design</li>
-                  <li>Mobile Apps Design</li>
-                  <li>System &amp; Guide</li>
-                  <li>Graphics Design</li>
-                  <li>Content Management</li>
+                <ul className="list-style-one two-column">
+                  {
+                    projects?.technologies.map(tech => <li>{tech}</li>)
+                  }
                 </ul>
+                <p style={{fontSize: "25px"}}>
+                  Npm Packages:
+                </p>
+                <ul className="list-style-one two-column">
+                  {
+                    projects?.packages.map(tech => <li>{tech}</li>)
+                  }
+                </ul>
+                {/* <ul className="list-style-one two-column mt-50 mb-40">
+                  <li>Web Development</li>
+                  <li>System &amp; Guide</li>
+                </ul> */}
               </div>
             </div>
             <div className="col-lg-4 wow fadeInUp delay-0-4s">
@@ -56,33 +74,33 @@ const ProjectDetails = () => {
                 className="project-details-info rmb-55"
                 style={{
                   backgroundImage:
-                    "url(assets/images/projects/project-info-bg.png)",
+                    "url(/assets/images/projects/project-info-bg.png)",
                 }}
               >
                 <div className="pd-info-item">
                   <span>Category</span>
-                  <h5>Product Design</h5>
+                  <h5>{projects?.subTitle}</h5>
                 </div>
-                <div className="pd-info-item">
+                {/* <div className="pd-info-item">
                   <span>Clients</span>
                   <h5>X_Design Studio</h5>
-                </div>
-                <div className="pd-info-item">
+                </div> */}
+                {/* <div className="pd-info-item">
                   <span>Location</span>
                   <h5>Melbourne, Australia</h5>
-                </div>
+                </div> */}
                 <div className="pd-info-item">
                   <span>Published</span>
-                  <h5>September 25, 2023</h5>
+                  <h5>{projects?.published}</h5>
                 </div>
               </div>
             </div>
           </div>
-          <div className="row pb-15">
+          {/* <div className="row pb-15">
             <div className="col-lg-4 col-sm-6">
               <div className="image mb-30 wow fadeInUp delay-0-2s">
                 <img
-                  src="assets/images/projects/project-middle1.jpg"
+                  src="/assets/images/projects/project-middle1.jpg"
                   alt="Project Middle"
                 />
               </div>
@@ -90,7 +108,7 @@ const ProjectDetails = () => {
             <div className="col-lg-4 col-sm-6">
               <div className="image mb-30 wow fadeInUp delay-0-4s">
                 <img
-                  src="assets/images/projects/project-middle2.jpg"
+                  src="/assets/images/projects/project-middle2.jpg"
                   alt="Project Middle"
                 />
               </div>
@@ -98,13 +116,13 @@ const ProjectDetails = () => {
             <div className="col-lg-4 col-sm-6">
               <div className="image mb-30 wow fadeInUp delay-0-6s">
                 <img
-                  src="assets/images/projects/project-middle3.jpg"
+                  src="/assets/images/projects/project-middle3.jpg"
                   alt="Project Middle"
                 />
               </div>
             </div>
-          </div>
-          <div className="project-bottom-content mb-50 wow fadeInUp delay-0-2s">
+          </div> */}
+          {/* <div className="project-bottom-content mb-50 wow fadeInUp delay-0-2s">
             <h3 className="title mb-25">Project Summery</h3>
             <p>
               There are many variations of passages of Lorem Ipsum available,
@@ -120,36 +138,44 @@ const ProjectDetails = () => {
               reasonable. The generated Lorem Ipsum is therefore always free
               from repetition, injected humour, or non-characteristic words etc.
             </p>
-          </div>
+          </div> */}
           <div className="tag-share py-30 wow fadeInUp delay-0-2s">
             <div className="item">
               <b>Tags</b>
               <div className="tag-coulds">
-                <Link legacyBehavior href="blog">
+                {
+                  projects?.tags.map(tag => (
+                    <Link legacyBehavior href="">
+                  {tag}
+                </Link>
+                  ))
+                }
+
+                {/* <Link legacyBehavior href="blog">
                   Design
                 </Link>
                 <Link legacyBehavior href="blog">
                   Figma
                 </Link>
-                <Link legacyBehavior href="blog">
+                <Link legacyBehavior href="">
                   Apps
-                </Link>
+                </Link> */}
               </div>
             </div>
             <div className="item">
               <b>Share</b>
               <div className="social-style-one">
-                <a href="#">
+                <a target="_blank" href="https://www.facebook.com/bodruddozaredoy">
                   <i className="fab fa-facebook-f" />
                 </a>
-                <a href="#">
+                <a target="_blank" href="https://x.com/BodruddozaRedoy">
                   <i className="fab fa-twitter" />
                 </a>
-                <a href="#">
+                <a target="_blank" href="https://www.linkedin.com/in/bodruddoza-redoy-637789197/">
                   <i className="fab fa-linkedin-in" />
                 </a>
-                <a href="#">
-                  <i className="fab fa-instagram" />
+                <a target="_blank" href="https://github.com/BodruddozaRedoy">
+                  <i className="fab fa-github" />
                 </a>
               </div>
             </div>
@@ -184,7 +210,7 @@ const ProjectDetails = () => {
               <div className="project-item style-two wow fadeInUp delay-0-2s">
                 <div className="project-image before-after-none">
                   <img
-                    src="assets/images/projects/related-project1.jpg"
+                    src="/assets/images/projects/related-project1.jpg"
                     alt="Project"
                   />
                 </div>
@@ -202,7 +228,7 @@ const ProjectDetails = () => {
               <div className="project-item style-two wow fadeInUp delay-0-4s">
                 <div className="project-image before-after-none">
                   <img
-                    src="assets/images/projects/related-project2.jpg"
+                    src="/assets/images/projects/related-project2.jpg"
                     alt="Project"
                   />
                 </div>
@@ -220,7 +246,7 @@ const ProjectDetails = () => {
               <div className="project-item style-two wow fadeInUp delay-0-6s">
                 <div className="project-image before-after-none">
                   <img
-                    src="assets/images/projects/related-project3.jpg"
+                    src="/assets/images/projects/related-project3.jpg"
                     alt="Project"
                   />
                 </div>
