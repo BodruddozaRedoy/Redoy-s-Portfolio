@@ -3,14 +3,14 @@ import Link from "next/link";
 const items = [
   {
     id: 1,
-    name: "React",
+    name: "React Js",
     image: "assets/images/skills/react.png",
     value: "90",
   },
   {
     id: 2,
-    name: "Framer",
-    image: "assets/images/skills/skill2.png",
+    name: "Next Js",
+    image: "https://miro.medium.com/v2/resize:fit:576/1*yqQpg5pkNNY2NCdcmqVstw.png",
     value: "30",
   },
   {
