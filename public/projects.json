@@ -1,11 +1,25 @@
 [
     {
       "id":1,
+      "title": "Dine Flow",
+      "subTitle": "Web Development",
+      "category": "development",
+      "img": "/assets/images/projects/project3.png",
+      "description": "A web app built using React, React Router, and Firebase for authentication and routing.",
+      "technologies": ["React", "Express Js", "MongoDb", "Node Js", "Firebase", "Tailwind Css"],
+      "packages": ["lottie-react", "react-awesome-reveal", "react-headroom", "react-helmet", "react-hot-toast", "react-rating-stars-component", "react-responsive-carousel", "react-slick", "react-sweetalert2"],
+      "tags": ["food", "Mern"],
+      "liveLink":"https://dine-flow-9cef9.web.app/",
+      "published": "December 20, 2024"
+      
+    },
+    {
+      "id":2,
       "title": "Sports Horizon",
       "subTitle": "Web Development",
       "category": "development",
       "img": "/assets/images/projects/project1.png",
-      "description": "A web app built using React, React Router, and Firebase for authentication and routing. It offers personalized career guidance.",
+      "description": "A web app built using React, React Router, and Firebase for authentication and routing.",
       "technologies": ["React", "Express Js", "MongoDb", "Node Js", "Firebase", "Tailwind Css"],
       "packages": ["lottie-react", "react-awesome-reveal", "react-headroom", "react-helmet", "react-hot-toast", "react-rating-stars-component", "react-responsive-carousel", "react-slick", "react-sweetalert2"],
       "tags": ["Sports", "Mern"],
@@ -14,12 +28,12 @@
       
     },
     {
-      "id":2,
+      "id":3,
       "title": "Gadget Heaven",
       "subTitle": "Web Development",
       "category": "development design",
       "img": "/assets/images/projects/project2.png",
-      "description": "A web app built using React, React Router, and Firebase for authentication and routing. It offers personalized career guidance.",
+      "description": "A web app built using React, React Router, and Firebase for authentication and routing.",
       "technologies": ["React", "Express Js", "MongoDb", "Node Js", "Firebase", "Tailwind Css"],
       "packages": ["lottie-react", "react-awesome-reveal", "react-headroom", "react-helmet", "react-hot-toast", "react-rating-stars-component", "react-responsive-carousel", "react-slick", "react-sweetalert2"],
       "tags": ["Gadgets", "Mern"],
