@@ -4,6 +4,7 @@ import Counter from "./Counter";
 const counterData = [
   { id: 1, text: "Years Of Experience", value: "2", valueType: "plus" },
   { id: 2, text: "Project Complete", value: "10", valueType: "plus" },
+  { id: 3, text: "Skill Learned", value: "20", valueType: "plus" },
   // { id: 3, text: "Client Satisfactions", value: "99", valueType: "percent" },
 ];
 
@@ -16,7 +17,8 @@ const Hero = () => {
             <div className="hero-content rmb-55 wow fadeInUp delay-0-2s">
               <span className="h2">Hello, i’m </span>
               <h1>
-                <b>Bodruddoza Redoy</b> web developer
+                <b>Bodruddoza Redoy</b>
+                <p style={{fontSize: "30px"}}>Full Stack Web Developer</p>
               </h1>
               {/* <p>
                 We denounce with righteous indignation dislike demoralized by
@@ -45,15 +47,15 @@ const Hero = () => {
             </div>
           </div>
           <div className="col-lg-5">
-            <div className="author-image-part wow fadeIn delay-0-3s">
-              <div className="bg-circle" />
-              <img src="assets/images/hero/profile-img.png" alt="Author" />
-              <div className="progress-shape">
+            <div  className="author-image-part wow fadeIn delay-0-3s">
+              {/* <div className="bg-circle" /> */}
+              <img src="assets/images/hero/hero.png" alt="Author" />
+              {/* <div className="progress-shape">
                 <img
                   src="assets/images/hero/progress-shape.png"
                   alt="Progress"
                 />
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

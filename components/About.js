@@ -46,14 +46,14 @@ const About = () => {
             </div>
             <div className="col-lg-5">
               <div className="about-image-part wow fadeInUp delay-0-3s">
-                <img src="assets/images/about/about-img.jpg" alt="About Me" />
+                <img src="assets/images/about/profileImg.jpg" alt="About Me" />
                 <div className="about-btn btn-one wow fadeInRight delay-0-4s">
                   <img src="assets/images/about/btn-image1.png" alt="Image" />
                   <h6>Experience Designer</h6>
                   <i className="fas fa-arrow-right" />
                 </div>
                 <div className="about-btn btn-two wow fadeInRight delay-0-5s">
-                  <img style={{width: "40px"}} src="assets/images/about/small-img.png" alt="Image" />
+                  <img style={{width: "45px", height: "45px", objectFit: "cover"}} src="assets/images/about/profileImg-small.jpg" alt="Image" />
                   <h6>Bodruddoza Redoy</h6>
                   <i className="fas fa-arrow-right" />
                 </div>

@@ -4812,7 +4812,7 @@ h6,
   margin-right: auto;
   position: relative;
   text-align: center;
-  border-radius: 0 0 580px 565px;
+  /* border-radius: 0 0 580px 565px; */
 }
 .author-image-part .bg-circle {
   z-index: -2;
