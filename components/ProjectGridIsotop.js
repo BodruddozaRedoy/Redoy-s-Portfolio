@@ -59,16 +59,28 @@ const ProjectGridIsotop = () => {
           Web Development
         </li>
         <li
+          className={`c-pointer ${activeBtn("reactjs")}`}
+          onClick={handleFilterKeyChange("reactjs")}
+        >
+          React Js
+        </li>
+        <li
           className={`c-pointer ${activeBtn("design")}`}
           onClick={handleFilterKeyChange("design")}
         >
           Web Design
         </li>
         <li
-          className={`c-pointer ${activeBtn("marketing")}`}
-          onClick={handleFilterKeyChange("marketing")}
+          className={`c-pointer ${activeBtn("wordpress")}`}
+          onClick={handleFilterKeyChange("wordpress")}
         >
           Wordpress
+        </li>
+        <li
+          className={`c-pointer ${activeBtn("nextjs")}`}
+          onClick={handleFilterKeyChange("nextjs")}
+        >
+          Next Js
         </li>
         <li
           className={`c-pointer ${activeBtn("graphics")}`}

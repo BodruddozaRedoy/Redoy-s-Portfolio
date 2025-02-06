@@ -1,44 +1,137 @@
 [
-    {
-      "id":1,
-      "title": "Dine Flow",
-      "subTitle": "Web Development",
-      "category": "development",
-      "img": "/assets/images/projects/project3.png",
-      "description": "A web app built using React, React Router, and Firebase for authentication and routing.",
-      "technologies": ["React", "Express Js", "MongoDb", "Node Js", "Firebase", "Tailwind Css"],
-      "packages": ["lottie-react", "react-awesome-reveal", "react-headroom", "react-helmet", "react-hot-toast", "react-rating-stars-component", "react-responsive-carousel", "react-slick", "react-sweetalert2"],
-      "tags": ["food", "Mern"],
-      "liveLink":"https://dine-flow-9cef9.web.app/",
-      "published": "December 20, 2024"
-      
-    },
-    {
-      "id":2,
-      "title": "Sports Horizon",
-      "subTitle": "Web Development",
-      "category": "development",
-      "img": "/assets/images/projects/project1.png",
-      "description": "A web app built using React, React Router, and Firebase for authentication and routing.",
-      "technologies": ["React", "Express Js", "MongoDb", "Node Js", "Firebase", "Tailwind Css"],
-      "packages": ["lottie-react", "react-awesome-reveal", "react-headroom", "react-helmet", "react-hot-toast", "react-rating-stars-component", "react-responsive-carousel", "react-slick", "react-sweetalert2"],
-      "tags": ["Sports", "Mern"],
-      "liveLink":"https://sports-horizon-b10a10.web.app/",
-      "published": "October 10, 2024"
-      
-    },
-    {
-      "id":3,
-      "title": "Gadget Heaven",
-      "subTitle": "Web Development",
-      "category": "development design",
-      "img": "/assets/images/projects/project2.png",
-      "description": "A web app built using React, React Router, and Firebase for authentication and routing.",
-      "technologies": ["React", "Express Js", "MongoDb", "Node Js", "Firebase", "Tailwind Css"],
-      "packages": ["lottie-react", "react-awesome-reveal", "react-headroom", "react-helmet", "react-hot-toast", "react-rating-stars-component", "react-responsive-carousel", "react-slick", "react-sweetalert2"],
-      "tags": ["Gadgets", "Mern"],
-      "liveLink":"https://gadget-heaven-d9be9.web.app/",
-      "published": "September 20, 2024"
-      
-    }
-  ]
+  {
+    "id": 1,
+    "title": "Dine Flow",
+    "subTitle": "Web Development",
+    "category": "development",
+    "img": "/assets/images/projects/project3.png",
+    "challenges": [
+      "Real-Time Order Management – Implementing a smooth and responsive system to handle multiple restaurant orders without delays.",
+      "User Authentication & Role Management – Ensuring secure access for admins, staff, and customers with different permissions.",
+      "Optimizing Performance – Handling large amounts of restaurant data while keeping the app fast and scalable.",
+      "Mobile Responsiveness – Designing a seamless mobile experience for customers ordering from different devices.",
+      "Handling Payments & Security – Integrating secure payment gateways without compromising user data."
+    ],
+    "improvements": [
+      "Handling Payments & Security – Integrating secure payment gateways without compromising user data.",
+      "AI-Powered Recommendations – Using machine learning to suggest menu items based on user preferences.",
+      "Multi-Language Support – Expanding the platform to cater to international users.",
+      "Integration with Third-Party Delivery Services – Connecting with platforms like UberEats or DoorDash.",
+      "Analytics Dashboard for Restaurants – Providing insights on sales, peak hours, and customer trends."
+    ],
+    "features": [
+      "Seamless Online Ordering – Customers can order food directly from the platform.",
+      "Automated Operations – Reduces staff workload by optimizing order processing.",
+      "Faster Payments – Supports quick and secure transactions to improve table turnover.",
+      "Multi-Service Support – Handles dine-in, take-away, and home delivery.",
+      "No POS Integration Needed – Works independently with a fully customizable interface."
+    ],
+    "description": "DineFlow is a modern Restaurant Management System designed to enhance dining experiences by streamlining order management, payments, and customer engagement. It provides restaurants with a custom-branded digital platform to increase sales, reduce costs, and improve customer loyalty.",
+    "technologies": ["React", "Express Js", "MongoDb", "Node Js", "Firebase", "Tailwind Css"],
+    "packages": [
+      "lottie-react",
+      "react-awesome-reveal",
+      "react-headroom",
+      "react-helmet",
+      "react-hot-toast",
+      "react-rating-stars-component",
+      "react-responsive-carousel",
+      "react-slick",
+      "react-sweetalert2"
+    ],
+    "tags": ["food", "Mern"],
+    "liveLink": "https://dine-flow-9cef9.web.app/",
+    "published": "December 20, 2024",
+    "githubLink": "https://github.com/BodruddozaRedoy/Dine-Flow-using-Mern"
+  },
+  {
+    "id": 2,
+    "title": "Sports Horizon",
+    "subTitle": "Web Development",
+    "category": "development",
+    "img": "/assets/images/projects/project1.png",
+    "challenges": [
+      "Real-Time Data Updates – Ensuring live updates for match schedules and scores.",
+      "User Authentication & Role Management – Managing different access levels for users and admins.",
+      "Optimizing Performance – Handling multiple API calls efficiently for sports data retrieval.",
+      "Mobile Responsiveness – Making the UI adapt seamlessly across different devices.",
+      "Handling Payments & Security – Implementing secure transactions for premium content subscriptions."
+    ],
+    "improvements": [
+      "AI-Powered Game Predictions – Using machine learning for match result predictions.",
+      "Multi-Language Support – Expanding the platform for international users.",
+      "Integration with Sports APIs – Fetching real-time data from reliable sources.",
+      "Live Streaming Feature – Allowing users to watch matches directly on the platform.",
+      "User Community & Forums – Adding discussion boards for fans."
+    ],
+    "features": [
+      "Live Sports Updates – Provides real-time match scores and schedules.",
+      "Team & Player Statistics – Displays detailed analytics on teams and players.",
+      "Event Booking – Allows users to book tickets for sports events.",
+      "Personalized Dashboards – Users can customize their sports feed.",
+      "Secure Authentication – Provides role-based access for different users."
+    ],
+    "description": "Sports Horizon is a web application built for sports enthusiasts, offering live updates, team statistics, and event booking. The platform enhances user engagement by providing real-time match scores and personalized dashboards.",
+    "technologies": ["React", "Express Js", "MongoDb", "Node Js", "Firebase", "Tailwind Css"],
+    "packages": [
+      "lottie-react",
+      "react-awesome-reveal",
+      "react-headroom",
+      "react-helmet",
+      "react-hot-toast",
+      "react-rating-stars-component",
+      "react-responsive-carousel",
+      "react-slick",
+      "react-sweetalert2"
+    ],
+    "tags": ["Sports", "Mern"],
+    "liveLink": "https://sports-horizon-b10a10.web.app/",
+    "published": "October 10, 2024",
+    "githubLink": "https://github.com/BodruddozaRedoy/Sports-Horizon-with-Mern-Stack"
+  },
+  {
+    "id": 3,
+    "title": "Gadget Heaven",
+    "subTitle": "Web Development",
+    "category": "development design",
+    "img": "/assets/images/projects/project2.png",
+    "challenges": [
+      "Real-Time Product Updates – Ensuring inventory sync for an accurate stock display.",
+      "User Authentication & Role Management – Managing different access levels for customers and admins.",
+      "Optimizing Performance – Handling large product listings while maintaining a fast user experience.",
+      "Mobile Responsiveness – Designing a seamless shopping experience across devices.",
+      "Handling Payments & Security – Implementing secure checkout and transaction handling."
+    ],
+    "improvements": [
+      "AI-Powered Product Recommendations – Suggesting relevant products based on user preferences.",
+      "Multi-Language Support – Expanding the platform for global audiences.",
+      "Integration with Third-Party Payment Gateways – Supporting multiple payment options.",
+      "Customer Review & Rating System – Allowing users to share feedback on products.",
+      "Augmented Reality (AR) Feature – Enabling virtual product try-ons."
+    ],
+    "features": [
+      "Wide Range of Gadgets – Showcases the latest tech gadgets with detailed specifications.",
+      "Secure Checkout System – Provides seamless and safe transactions.",
+      "User Reviews & Ratings – Helps customers make informed purchasing decisions.",
+      "Wishlist & Cart System – Allows users to save and manage their favorite products.",
+      "Fast Search & Filtering – Enables quick product discovery."
+    ],
+    "description": "Gadget Heaven is an e-commerce platform designed for tech enthusiasts, offering a wide range of gadgets with secure checkout and seamless user experience.",
+    "technologies": ["React", "Express Js", "MongoDb", "Node Js", "Firebase", "Tailwind Css"],
+    "packages": [
+      "lottie-react",
+      "react-awesome-reveal",
+      "react-headroom",
+      "react-helmet",
+      "react-hot-toast",
+      "react-rating-stars-component",
+      "react-responsive-carousel",
+      "react-slick",
+      "react-sweetalert2"
+    ],
+    "tags": ["Gadgets", "Mern"],
+    "liveLink": "https://gadget-heaven-d9be9.web.app/",
+    "published": "September 20, 2024",
+    "githubLink": "https://github.com/BodruddozaRedoy/Gadget-Heaven-with-Mern-Stack"
+  }
+]
