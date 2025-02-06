@@ -8,7 +8,7 @@ export const metadata = {
 const page = () => {
   return (
     <NoxfolioLayout>
-      <PageBanner pageName={"Contact Us"} />
+      <PageBanner pageName={"Contact Me"} />
       {/* Contact Page Area start */}
       <section className="contact-page pt-40 pb-130 rpb-100 rel z-1">
       <div className="container">
@@ -25,7 +25,7 @@ const page = () => {
                 </p>
               </div>
               <ul className="list-style-two">
-                <li>2+ Years Of Experience</li>
+                <li>2+ Years Of Learning Experience</li>
                 <li>Professional Web Designer</li>
                 <li>Professional Web Developer</li>
                 <li>Custom Design Support</li>

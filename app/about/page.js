@@ -34,7 +34,26 @@ const About = () => {
                     Passionate <span>Mern Stack</span> Developer
                   </h2>
                   <p>
-                  I am a dedicated and enthusiastic MERN stack developer with a strong foundation in building dynamic and responsive web applications. Having honed my skills in MongoDB, Express.js, React, and Node.js, I thrive on creating seamless and user-friendly experiences. Eager to tackle real-world challenges, I continuously strive to improve my expertise and stay updated with the latest web development trends. Whether it's crafting intuitive front-end interfaces or building robust back-end systems, I am committed to delivering impactful solutions that meet user and business needs.
+                  <span style={{color: "greenyellow"}}>Hi</span>, I'm a passionate MERN stack developer with a strong
+                    enthusiasm for building modern web applications. <br /> <span style={{color: "greenyellow"}}>My</span> journey
+                    into programming started with a curiosity for how websites
+                    and applications work. That curiosity led me to learn the
+                    MERN stack through Programming Hero, where I built various
+                    projects that solidified my skills in React, Node.js,
+                    Express, and MongoDB. <br /> <span style={{color: "greenyellow"}}>I</span> enjoy solving complex problems,
+                    developing user-friendly interfaces, and working on
+                    real-world projects that make an impact. My current focus is
+                    on React and Next.js, where I create scalable, efficient,
+                    and engaging applications. <br /> <span style={{color: "greenyellow"}}>Beyond</span> coding, I'm a huge gaming
+                    enthusiast! Whether it's exploring open-world adventures or
+                    competing in fast-paced multiplayer games, I love the
+                    challenge and excitement gaming brings. I also enjoy
+                    exploring new technologies and keeping up with the latest
+                    trends in web development. <br /> <span style={{color: "greenyellow"}}>I</span> believe in continuous learning,
+                    and I'm always looking for opportunities to grow as a
+                    developer. My goal is to contribute to meaningful projects
+                    and collaborate with like-minded individuals to create
+                    something amazing!
                   </p>
                 </div>
                 <ul className="list-style-one two-column pb-30 wow fadeInUp delay-0-2s">
@@ -54,7 +73,7 @@ const About = () => {
               <div className="about-right-part wow fadeInLeft delay-0-3s">
                 <div className="experience-years">
                   <b>2+</b>
-                  <h5>Years Of Experience</h5>
+                  <h5>Years Of Learning</h5>
                 </div>
                 <div className="about-btn one wow fadeInRight delay-0-4s">
                   <img src="assets/images/about/btn-image1.png" alt="Image" />

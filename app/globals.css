@@ -33,3 +33,9 @@ html {
 .skill-img{
   width: 60px;
 }
+
+.project-image{
+  border: 3px solid greenyellow;
+  padding: 10px;
+  border-radius: 10px;
+}

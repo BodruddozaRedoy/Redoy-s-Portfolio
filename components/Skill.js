@@ -11,7 +11,7 @@ const items = [
     id: 2,
     name: "Next Js",
     image: "https://miro.medium.com/v2/resize:fit:576/1*yqQpg5pkNNY2NCdcmqVstw.png",
-    value: "30",
+    value: "50",
   },
   {
     id: 3,

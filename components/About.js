@@ -15,7 +15,26 @@ const About = () => {
                     Business
                   </h2>
                   <p>
-                  I am a dedicated and enthusiastic MERN stack developer with a strong foundation in building dynamic and responsive web applications. Having honed my skills in MongoDB, Express.js, React, and Node.js, I thrive on creating seamless and user-friendly experiences.
+                    <span style={{color: "greenyellow"}}>Hi</span>, I'm a passionate MERN stack developer with a strong
+                    enthusiasm for building modern web applications. <br /> <span style={{color: "greenyellow"}}>My</span> journey
+                    into programming started with a curiosity for how websites
+                    and applications work. That curiosity led me to learn the
+                    MERN stack through Programming Hero, where I built various
+                    projects that solidified my skills in React, Node.js,
+                    Express, and MongoDB. <br /> <span style={{color: "greenyellow"}}>I</span> enjoy solving complex problems,
+                    developing user-friendly interfaces, and working on
+                    real-world projects that make an impact. My current focus is
+                    on React and Next.js, where I create scalable, efficient,
+                    and engaging applications. <br /> <span style={{color: "greenyellow"}}>Beyond</span> coding, I'm a huge gaming
+                    enthusiast! Whether it's exploring open-world adventures or
+                    competing in fast-paced multiplayer games, I love the
+                    challenge and excitement gaming brings. I also enjoy
+                    exploring new technologies and keeping up with the latest
+                    trends in web development. <br /> <span style={{color: "greenyellow"}}>I</span> believe in continuous learning,
+                    and I'm always looking for opportunities to grow as a
+                    developer. My goal is to contribute to meaningful projects
+                    and collaborate with like-minded individuals to create
+                    something amazing!
                   </p>
                 </div>
                 <ul className="list-style-one two-column wow fadeInUp delay-0-2s">
@@ -30,7 +49,9 @@ const About = () => {
                     <div className="content">
                       <span>Email Me</span>
                       <br />
-                      <a href="mailto:bodruddozaredoy@gmail.com">bodruddozaredoy@gmail.com</a>
+                      <a href="mailto:bodruddozaredoy@gmail.com">
+                        bodruddozaredoy@gmail.com
+                      </a>
                     </div>
                   </div>
                   <div className="info-box-item">
@@ -53,7 +74,15 @@ const About = () => {
                   <i className="fas fa-arrow-right" />
                 </div>
                 <div className="about-btn btn-two wow fadeInRight delay-0-5s">
-                  <img style={{width: "45px", height: "45px", objectFit: "cover"}} src="assets/images/about/profileImg-small.jpg" alt="Image" />
+                  <img
+                    style={{
+                      width: "45px",
+                      height: "45px",
+                      objectFit: "cover",
+                    }}
+                    src="assets/images/about/profileImg-small.jpg"
+                    alt="Image"
+                  />
                   <h6>Bodruddoza Redoy</h6>
                   <i className="fas fa-arrow-right" />
                 </div>
