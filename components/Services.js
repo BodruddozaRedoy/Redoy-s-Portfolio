@@ -13,12 +13,12 @@ const Services = ({ extraClass }) => {
       text: "Your thoughts my design",
     },
     {
-      id: 2,
+      id: 3,
       title: "React Js Web Application ",
       text: "Your thoughts my design",
     },
     {
-      id: 2,
+      id: 4,
       title: "Next Js Web Application ",
       text: "Your thoughts my design",
     },
