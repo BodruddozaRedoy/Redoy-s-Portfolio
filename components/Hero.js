@@ -3,7 +3,7 @@ import Counter from "./Counter";
 import TypewriterComponent from "./TypewriterComponent";
 
 const counterData = [
-  { id: 1, text: "Years Of Experience", value: "2", valueType: "plus" },
+  { id: 1, text: "Years Of Learning", value: "2", valueType: "plus" },
   { id: 2, text: "Project Complete", value: "10", valueType: "plus" },
   { id: 3, text: "Skill Learned", value: "20", valueType: "plus" },
   // { id: 3, text: "Client Satisfactions", value: "99", valueType: "percent" },
